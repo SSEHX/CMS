@@ -1,0 +1,19 @@
+.sidebar_h2 {
+    text-align: center;
+}
+.user_head_div {
+    position: absolute;
+    top: 5.5px;right: 20px;
+}
+.header_search{
+    height: 37px;
+    margin: 4.5px 14px;
+
+}
+.login_div {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    top: 5.5px;right: 20px;
+    height: 37px;
+}
