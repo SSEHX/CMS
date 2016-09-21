@@ -1,7 +1,7 @@
 
 <?php
 
-include_once '../class/main.class.php';
+include_once dirname(__FILE__).'';
 
 $login = new login();
 $login->is_login();
@@ -32,33 +32,54 @@ $login->is_login();
         <div class="header_search">
             <div class="ui left icon action input">
                 <i class="search icon"></i>
-                <input type="text" placeholder="search">
+                <input type="text" placeholder="Search">
                 <div class="ui blue submit button">搜索</div>
             </div>
         </div>
-        <!--        用户信息-->
-        <a href="../user/login.php"><button class="ui positive basic button" >登陆</button></a>
 
-        <div class="user_head_div" >
-            <div class="ui horizontal list" id="user_head">
-                <div class="item">
-                    <img src="image/patrick.png"  class="ui mini circular image">
-                    <div class="content">
-                        <div class="ui sub header">xux</div>Project Manager </div>
+        <?php
+        $info;
+        if ($_SESSION['level']>0){
+            $info = "Administrator level :".$_SESSION['level'];
+        }
+        $user = @<<<user
+    <!--        用户信息-->
+            <div class="user_head_div">
+                <div class="ui horizontal list" id="user_head">
+                    <div class="item">
+                        <img src="image/{$_SESSION['head']}" class="ui mini circular image">
+                        <div class="content">
+                            <div class="ui sub header">{$_COOKIE['ych_u']}</div>{$info}</div>
+                    </div>
+                </div>
+                <div class="ui fluid popup bottom center transition">
+                    <a href="/cms/user/launch.php"><button class="negative ui button">注销</button></a>
                 </div>
             </div>
-            <div class="ui fluid popup bottom center transition">
-
-                <a href="../user/launch.php"><button class="negative ui button">注销</button></a>
+user;
+        $login = <<<login
+            <div class="login_div">
+                <a href="/cms/user/login.php"><button class="ui inverted violet button">登陆</button></a>
+                
+                <a href="/cms/user/register.php"><button class="ui inverted blue button">注册</button></a>
             </div>
+login;
 
-        </div>
+        if (@$_SESSION['i']){
+            echo $user;
+
+        }else{
+            echo $login;
+        }
+        ?>
+
+
     </div>
     <div>
         <?php
-        var_dump($_SESSION);
         var_dump($_COOKIE);
         echo "<hr>";
+        var_dump($_SESSION);
         ?>
     </div>
 </div>

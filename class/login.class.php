@@ -55,6 +55,7 @@ class login{
                 if ($row['id']){
                     $_SESSION['i'] = 1;
                     $_SESSION['head'] = $row['head'];
+                    $_SESSION['level'] = $row['is_admin'];
                     setcookie('ych_u',$_POST['user'],time()+3600,"/");
                     setcookie('ych_p',$password,time()+3600,"/");
                     setcookie('id',$row['id'],time()+3600,"/");

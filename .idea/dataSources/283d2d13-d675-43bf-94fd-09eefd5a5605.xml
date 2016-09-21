@@ -11,151 +11,173 @@
     <schema id="6" name="test">
       <visible>1</visible>
     </schema>
-    <table id="7" parent="1" name="document"/>
-    <table id="8" parent="1" name="document_type"/>
-    <table id="9" parent="1" name="users"/>
-    <table id="10" parent="1" name="admin_menu"/>
-    <column id="11" parent="7" name="id">
+    <schema id="7" name="abc"/>
+    <schema id="8" name="ych_db"/>
+    <table id="9" parent="1" name="document"/>
+    <table id="10" parent="1" name="document_type"/>
+    <table id="11" parent="1" name="users"/>
+    <routine id="12" parent="6" name="AddGeometryColumn">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="13" parent="6" name="DropGeometryColumn">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <column id="14" parent="9" name="id">
       <mandatory>1</mandatory>
       <data-type>int(10) unsigned|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="12" parent="7" name="user_id">
+    <column id="15" parent="9" name="user_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <default-expression>&apos;0&apos;</default-expression>
     </column>
-    <column id="13" parent="7" name="title">
+    <column id="16" parent="9" name="title">
       <mandatory>1</mandatory>
       <data-type>varchar(255)|0</data-type>
       <default-expression>&apos;标题&apos;</default-expression>
     </column>
-    <column id="14" parent="7" name="document">
+    <column id="17" parent="9" name="document">
       <mandatory>1</mandatory>
       <data-type>text|0</data-type>
     </column>
-    <column id="15" parent="7" name="create_time">
+    <column id="18" parent="9" name="create_time">
       <mandatory>1</mandatory>
       <data-type>int(10) unsigned|0</data-type>
       <default-expression>&apos;0&apos;</default-expression>
     </column>
-    <column id="16" parent="7" name="see_num">
+    <column id="19" parent="9" name="see_num">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <default-expression>&apos;0&apos;</default-expression>
     </column>
-    <key id="17" parent="7" name="PRIMARY">
+    <key id="20" parent="9" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <column id="18" parent="8" name="id">
+    <column id="21" parent="10" name="id">
       <mandatory>1</mandatory>
       <data-type>int(10) unsigned|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="19" parent="8" name="type">
+    <column id="22" parent="10" name="type">
       <mandatory>1</mandatory>
       <data-type>varchar(20)|0</data-type>
       <default-expression>&apos;&apos;</default-expression>
     </column>
-    <key id="20" parent="8" name="PRIMARY">
+    <key id="23" parent="10" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <column id="21" parent="9" name="id">
+    <column id="24" parent="11" name="id">
       <mandatory>1</mandatory>
       <data-type>int(10) unsigned|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="22" parent="9" name="user">
+    <column id="25" parent="11" name="user">
       <mandatory>1</mandatory>
       <data-type>varchar(10)|0</data-type>
       <default-expression>&apos;&apos;</default-expression>
     </column>
-    <column id="23" parent="9" name="password">
+    <column id="26" parent="11" name="password">
       <mandatory>1</mandatory>
       <data-type>varchar(32)|0</data-type>
       <default-expression>&apos;&apos;</default-expression>
     </column>
-    <column id="24" parent="9" name="name">
+    <column id="27" parent="11" name="name">
       <mandatory>1</mandatory>
       <data-type>varchar(30)|0</data-type>
       <default-expression>&apos;&apos;</default-expression>
     </column>
-    <column id="25" parent="9" name="sex">
+    <column id="28" parent="11" name="sex">
       <mandatory>1</mandatory>
       <data-type>varchar(2)|0</data-type>
       <default-expression>&apos;男&apos;</default-expression>
     </column>
-    <column id="26" parent="9" name="email">
+    <column id="29" parent="11" name="email">
       <mandatory>1</mandatory>
       <data-type>varchar(255)|0</data-type>
       <default-expression>&apos;user@user.com&apos;</default-expression>
     </column>
-    <column id="27" parent="9" name="qq">
+    <column id="30" parent="11" name="qq">
       <mandatory>1</mandatory>
       <data-type>varchar(12)|0</data-type>
       <default-expression>&apos;0&apos;</default-expression>
     </column>
-    <column id="28" parent="9" name="status">
+    <column id="31" parent="11" name="status">
       <mandatory>1</mandatory>
       <data-type>varchar(2)|0</data-type>
       <default-expression>&apos;1&apos;</default-expression>
     </column>
-    <column id="29" parent="9" name="create_time">
+    <column id="32" parent="11" name="create_time">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <default-expression>&apos;0&apos;</default-expression>
     </column>
-    <column id="30" parent="9" name="create_ip">
+    <column id="33" parent="11" name="create_ip">
       <mandatory>1</mandatory>
       <data-type>varchar(15)|0</data-type>
       <default-expression>&apos;0.0.0.0&apos;</default-expression>
     </column>
-    <column id="31" parent="9" name="last_login_time">
+    <column id="34" parent="11" name="last_login_time">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <default-expression>&apos;0&apos;</default-expression>
     </column>
-    <column id="32" parent="9" name="last_login_ip">
+    <column id="35" parent="11" name="last_login_ip">
       <mandatory>1</mandatory>
       <data-type>varchar(15)|0</data-type>
       <default-expression>&apos;0.0.0.0&apos;</default-expression>
     </column>
-    <column id="33" parent="9" name="head">
+    <column id="36" parent="11" name="head">
       <mandatory>1</mandatory>
       <data-type>varchar(255)|0</data-type>
       <default-expression>&apos;default.png&apos;</default-expression>
     </column>
-    <column id="34" parent="9" name="is_admin">
+    <column id="37" parent="11" name="is_admin">
+      <mandatory>1</mandatory>
       <data-type>enum(&apos;0&apos;, &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, &apos;4&apos;, &apos;5&apos;, &apos;6&apos;, &apos;7&apos;, &apos;8&apos;, &apos;9&apos;)|0</data-type>
       <default-expression>&apos;0&apos;</default-expression>
     </column>
-    <key id="35" parent="9" name="PRIMARY">
+    <key id="38" parent="11" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <column id="36" parent="10" name="id">
-      <mandatory>1</mandatory>
-      <data-type>int(10) unsigned|0</data-type>
-      <sequence-identity>1</sequence-identity>
-    </column>
-    <column id="37" parent="10" name="type">
-      <mandatory>1</mandatory>
-      <data-type>varchar(30)|0</data-type>
-      <default-expression>&apos;&apos;</default-expression>
-    </column>
-    <column id="38" parent="10" name="menu">
-      <data-type>varchar(30)|0</data-type>
-      <default-expression>&apos;&apos;</default-expression>
-    </column>
-    <column id="39" parent="10" name="admin_level">
-      <data-type>enum(&apos;0&apos;, &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, &apos;4&apos;, &apos;5&apos;, &apos;6&apos;, &apos;7&apos;, &apos;8&apos;, &apos;9&apos;)|0</data-type>
-      <default-expression>&apos;9&apos;</default-expression>
-    </column>
-    <key id="40" parent="10" name="PRIMARY">
-      <columns>id</columns>
-      <primary>1</primary>
-    </key>
+    <argument id="39" parent="12" name="catalog">
+      <direction>IN</direction>
+      <data-type>varchar(64)|0</data-type>
+    </argument>
+    <argument id="40" parent="12" name="t_schema">
+      <direction>IN</direction>
+      <data-type>varchar(64)|0</data-type>
+    </argument>
+    <argument id="41" parent="12" name="t_name">
+      <direction>IN</direction>
+      <data-type>varchar(64)|0</data-type>
+    </argument>
+    <argument id="42" parent="12" name="geometry_column">
+      <direction>IN</direction>
+      <data-type>varchar(64)|0</data-type>
+    </argument>
+    <argument id="43" parent="12" name="t_srid">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="44" parent="13" name="catalog">
+      <direction>IN</direction>
+      <data-type>varchar(64)|0</data-type>
+    </argument>
+    <argument id="45" parent="13" name="t_schema">
+      <direction>IN</direction>
+      <data-type>varchar(64)|0</data-type>
+    </argument>
+    <argument id="46" parent="13" name="t_name">
+      <direction>IN</direction>
+      <data-type>varchar(64)|0</data-type>
+    </argument>
+    <argument id="47" parent="13" name="geometry_column">
+      <direction>IN</direction>
+      <data-type>varchar(64)|0</data-type>
+    </argument>
   </database-model>
 </dataSource>

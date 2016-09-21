@@ -46,14 +46,13 @@
                     <div class="ui blue submit button">搜索</div>
                 </div>
             </div>
-
             <?php
                 $user = <<<user
     <!--        用户信息-->
             <div class="user_head_div">
                 <div class="ui horizontal list">
                     <div class="item">
-                        <img src="image/patrick.png" class="ui mini circular image">
+                        <img src="image/default.png" class="ui mini circular image">
                         <div class="content">
                             <div class="ui sub header">Eve</div>Project Manager </div>
                     </div>
