@@ -6,6 +6,8 @@
  * Time: 下午9:17
  * 类的集合
  */
+
+define("__ROOT__",dirname(__FILE__));
 session_start();
 
 include_once 'db.class.php';

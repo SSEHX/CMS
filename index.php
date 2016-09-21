@@ -39,6 +39,14 @@ include_once 'class/main.class.php';
     <?php
     include_once 'public/public.php';
     ?>
+
+    <div>
+        <?php
+        var_dump($_SESSION);
+        echo "<hr>";
+        var_dump($_COOKIE);
+        ?>
+    </div>
 </div>
 </body>
 <script src="style/js/jquery.js"></script>
