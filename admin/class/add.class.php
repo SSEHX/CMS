@@ -15,7 +15,7 @@ class add {
             $query = "insert into admin_menu (type,menu) VALUE ('{$_POST['type']}','{$_POST['menu']}')";
             $db = db::GET_OBJ();
             if ($db->query($query,false)){
-                alter_goto::alertGoto(dirname(__FILE__)."/add_admin_menu",'插入完成');
+
             }else{
                 alter_goto::alertGoto(__FILE__,'插入失败');
             }

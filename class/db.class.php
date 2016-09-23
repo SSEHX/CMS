@@ -80,6 +80,20 @@ class db {
     }
 
     /*
-     * 当对象销毁时执行 关闭数据库连接,
+     * 获取数据库内数据
+     * $field : 字段
+     * $table : 表
+     * $where : 筛选条件
      */
+    public function get_db_data($field,$table,$where=''){
+        $query = "select {$field} from {$table} {$where} ";
+        $db = db::GET_OBJ();
+        $request = $db->query($query);
+        $num = 0;
+        while($data[$num] = mysqli_fetch_row($request)){
+            $num++;
+        }
+        $data = array_filter($data);
+        return $data;
+    }
 }

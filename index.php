@@ -7,6 +7,7 @@
  */
 
 include_once 'class/main.class.php';
+$db = db::GET_OBJ();
 
 ?>
 <!DOCTYPE html>
@@ -23,23 +24,18 @@ include_once 'class/main.class.php';
 <div class="ui sidebar inverted vertical menu">
 
     <h4 class="ui horizontal inverted divider">MENU</h4>
-    <a class="item">PHP</a>
-    <a class="item">HTML</a>
-    <a class="item">CSS</a>
-    <a class="item">jquery</a>
-    <a class="item">bootstrap</a>
-    <a class="item">semantic</a>
-    <a class="item">MySql</a>
-    <a class="item">Linux</a>
-    <a class="item">LAMP</a>
-    <a class="item">javascript</a>
+    <?php
+        $data = $db->get_db_data('type,menu','document_menu');
+        foreach ($data as $value){
+            echo "<a class='item' href = 'document/{$value[0]}'>{$value[1]}</a>";
+        }
+    ?>
 </div>
 <div class="pusher">
     <!-- Site content !-->
     <?php
     include_once 'public/public.php';
     ?>
-
     <div>
         <?php
         var_dump($_SESSION);
