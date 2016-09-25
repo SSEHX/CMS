@@ -20,7 +20,7 @@ $login->is_login();
         $info;$goto_admin;
         if (@$_SESSION['level']>0){
             $info = "Administrator level :".$_SESSION['level'];
-            $goto_admin = "<a href=\"/cms/admin/admin.php\"><button class=\"ui button inverted green \">管理页面</button></a>
+            $goto_admin = "<a href=\"/cms/admin/index.php\"><button class=\"ui button inverted green \">管理页面</button></a>
 ";
         }
         $user = @<<<user

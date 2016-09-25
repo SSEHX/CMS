@@ -17,7 +17,7 @@ class check_level {
             $row = mysqli_fetch_row($request);
             $_SESSION['level']=$row[0];
         }else{
-            alter_goto::alertGoto('/admin/index.php');
+            alter_goto::alertGoto('/cms/user/login.php');
         }
     }
 }

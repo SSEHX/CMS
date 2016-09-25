@@ -1,0 +1,13 @@
+.user_div {
+    width: 80%;
+    margin: 10px auto;
+}
+.user_change_th {
+    width: 175px;
+}
+.user_checkbox_th {
+    width: 50px;
+}
+.checkbox_td {
+    margin: 5.5px;
+}

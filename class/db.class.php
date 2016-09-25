@@ -86,7 +86,9 @@ class db {
      * $where : 筛选条件
      */
     public function get_db_data($field,$table,$where=''){
+
         $query = "select {$field} from {$table} {$where} ";
+
         $db = db::GET_OBJ();
         $request = $db->query($query);
         $num = 0;
