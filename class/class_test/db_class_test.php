@@ -10,5 +10,9 @@ session_start();
 
 include_once '../db.class.php';
 
-$db = new db();
-
+$db = db::GET_OBJ();
+for ($i = 1;$i<10000;$i++) {
+    $query = "insert into users (user) value ('{$i}')";
+    var_dump($db->query($query));
+    echo $i."<hr>";
+}

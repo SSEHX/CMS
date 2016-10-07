@@ -1,6 +1,8 @@
 .user_div {
+    min-width: 1000px;
     width: 80%;
-    margin: 10px auto;
+    /*float: right;*/
+    display: inline-block;
 }
 .user_change_th {
     width: 175px;
@@ -10,4 +12,19 @@
 }
 .checkbox_td {
     margin: 5.5px;
+}
+.show_user_info {
+    width: 20%;
+    display: inline-block;
+    float: right;
+    border: 1.5px solid rgba(34,36,38,.15);
+    /*border-radius: 5px;*/
+    background: #1B1C1D;
+    color: #fff;
+    position: fixed;
+
+    top:50px; right: 2px; bottom: 2px;
+    width: 20%;
+    word-wrap:break-word;
+    word-break:break-all;
 }
