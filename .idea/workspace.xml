@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b22ba045-6392-40ce-b85f-1b5be0c1c94a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/class/get_admin_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/class/get_user_info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/class/get_user_table.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/class/AJAX/get_user_table.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.RM" afterPath="$PROJECT_DIR$/README.RM" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/class/check_admin_level.class.php" afterPath="$PROJECT_DIR$/admin/class/check_admin_level.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/style/css/user_control.css" afterPath="$PROJECT_DIR$/admin/style/css/user_control.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/style/js/user_control.js" afterPath="$PROJECT_DIR$/admin/style/js/user_control.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/user_control.php" afterPath="$PROJECT_DIR$/admin/user_control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/class_test/db_class_test.php" afterPath="$PROJECT_DIR$/class/class_test/db_class_test.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,8 +67,8 @@
       <file leaf-file-name="user_control.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/user_control.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+            <state relative-caret-position="391">
+              <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
               <folding>
                 <element signature="e#6#102#0#PHP" expanded="true" />
               </folding>
@@ -174,8 +165,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
+    <option name="y" value="22" />
+    <option name="width" value="1127" />
+    <option name="height" value="700" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -219,13 +211,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/admin/class" />
       <recent name="$PROJECT_DIR$/admin" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -301,7 +292,7 @@
       <workItem from="1475021136529" duration="8148000" />
       <workItem from="1475637367072" duration="141000" />
       <workItem from="1475823684674" duration="304000" />
-      <workItem from="1475884435117" duration="167000" />
+      <workItem from="1475884435117" duration="762000" />
     </task>
     <task id="LOCAL-00001" summary="2016-09-21&#10;第一次修改&#10;">
       <created>1474419915656</created>
@@ -345,21 +336,28 @@
       <option name="project" value="LOCAL" />
       <updated>1474782877968</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2016-10-08&#10;第一次修改&#10;&#10;&#10;">
+      <created>1475884627345</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1475884627345</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46792000" />
+    <option name="totallyTimeSpent" value="47387000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1127" height="700" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2265861" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2764977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19108762" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5687679" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28618422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5816619" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -409,7 +407,8 @@
     <MESSAGE value="2016-09-21&#10;第二次修改&#10;" />
     <MESSAGE value="2016-09-23&#10;第三次修改&#10;" />
     <MESSAGE value="2016-09-25&#10;第一次修改&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="2016-09-25&#10;第一次修改&#10;&#10;" />
+    <MESSAGE value="2016-10-08&#10;第一次修改&#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="2016-10-08&#10;第一次修改&#10;&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -778,7 +777,7 @@
         <state relative-caret-position="374">
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding>
-            <element signature="e#6#107#0#PHP" expanded="true" />
+            <element signature="e#6#107#0#PHP" expanded="false" />
             <marker date="1475030078000" expanded="true" signature="300:354" ph="select id,he... users" />
             <marker date="1475030078000" expanded="true" signature="300:363" ph="select id,he... users" />
             <marker date="1475030078000" expanded="true" signature="300:377" ph="select id,he... users" />
@@ -865,8 +864,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/user_control.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        <state relative-caret-position="391">
+          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
           <folding>
             <element signature="e#6#102#0#PHP" expanded="true" />
           </folding>
